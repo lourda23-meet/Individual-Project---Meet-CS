@@ -43,8 +43,7 @@ def signup():
 		# try:
 		login_session['user'] = auth.create_user_with_email_and_password(email, password)
 		return redirect(url_for('signin'))
-		# except:
-		error = "Authentication failed"
+		# except:		
 	return render_template("signup.html")
 
 
