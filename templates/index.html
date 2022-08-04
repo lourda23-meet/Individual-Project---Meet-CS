@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<h1> To Do List </h1>
+	</nav>
+	<div class ="jumbotron">
+		<form class="form-group" action="/" method ="POST">
+		<label for="name">Hi there, hope you are doing well. Enter your daily tasks! </label>
+		<input type ="text" name="name" class="form-control"><br>
+		<button class="btn btn-primary" type="submit" name="submit" value="add">Submit</button> 
+		<button class="btn btn-danger" type="submit" name="submit" value="delete">Delete</button>
+	</form>
+
+
+</div>
+
+<div class ="contianer-fluid">
+<u1 class="list-group">
+	{% for i in T %}
+		<li>
+			{{T[i]}}
+		</li>
+			
+	{% endfor %}
+</u1>
+</body>
+</html>
